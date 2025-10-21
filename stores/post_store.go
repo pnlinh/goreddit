@@ -8,10 +8,6 @@ import (
 	"github.com/pnlinh/goreddit"
 )
 
-func NewPostStore(DB *sqlx.DB) *PostStore {
-	return &PostStore{DB: DB}
-}
-
 type PostStore struct {
 	*sqlx.DB
 }

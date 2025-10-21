@@ -5,7 +5,6 @@ import (
 
 	"github.com/jmoiron/sqlx"
 	_ "github.com/lib/pq"
-	"github.com/pnlinh/goreddit"
 )
 
 func NewStore(dataSourceName string) (*Store, error) {
@@ -20,14 +19,14 @@ func NewStore(dataSourceName string) (*Store, error) {
 	}
 
 	return &Store{
-		ThreadStore:  NewThreadStore(db),
-		PostStore:    NewPostStore(db),
-		CommentStore: NewCommentStore(db),
+		ThreadStore:  &ThreadStore{db},
+		PostStore:    &PostStore{db},
+		CommentStore: &CommentStore{db},
 	}, nil
 }
 
 type Store struct {
-	goreddit.ThreadStore
-	goreddit.PostStore
-	goreddit.CommentStore
+	*ThreadStore
+	*PostStore
+	*CommentStore
 }

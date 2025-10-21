@@ -8,10 +8,6 @@ import (
 	"github.com/pnlinh/goreddit"
 )
 
-func NewCommentStore(DB *sqlx.DB) *CommentStore {
-	return &CommentStore{DB: DB}
-}
-
 type CommentStore struct {
 	*sqlx.DB
 }
