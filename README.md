@@ -108,6 +108,21 @@ The server will start on `http://localhost:8081`
   - Form parameters: `title`, `description`
 - `DELETE /threads/{id}` - Delete a thread by ID
 
+### Testing the API
+
+A [Yaak](https://yaak.app) REST client collection is provided in `rest/yaak.goreddit.json` with pre-configured requests for testing all API endpoints.
+
+To use the collection:
+
+1. Install [Yaak REST Client](https://yaak.app)
+2. Import the collection file: `File > Import > rest/yaak.goreddit.json`
+3. The collection includes sample requests for:
+   - Creating threads
+   - Listing threads
+   - Deleting threads
+
+The collection is configured to work with the default server running on `http://localhost:8081`.
+
 ### Database Schema
 
 The application uses three main tables:
