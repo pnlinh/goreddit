@@ -1,0 +1,150 @@
+{
+  "yaakVersion": "2025.6.1",
+  "yaakSchema": 4,
+  "timestamp": "2025-10-21T16:28:24.846885",
+  "resources": {
+    "workspaces": [
+      {
+        "model": "workspace",
+        "id": "wk_CxJ3DPHSWw",
+        "createdAt": "2025-10-21T16:09:00.400188",
+        "updatedAt": "2025-10-21T16:09:00.400190",
+        "authentication": {},
+        "authenticationType": null,
+        "description": "",
+        "headers": [],
+        "name": "Goreddit",
+        "encryptionKeyChallenge": null,
+        "settingValidateCertificates": true,
+        "settingFollowRedirects": true,
+        "settingRequestTimeout": 0
+      }
+    ],
+    "environments": [],
+    "folders": [],
+    "httpRequests": [
+      {
+        "model": "http_request",
+        "id": "rq_FNdTSnTYCZ",
+        "createdAt": "2025-10-21T16:21:05.475699",
+        "updatedAt": "2025-10-21T16:21:39.411287",
+        "workspaceId": "wk_CxJ3DPHSWw",
+        "folderId": null,
+        "authentication": {},
+        "authenticationType": null,
+        "body": {
+          "form": [
+            {
+              "enabled": true,
+              "name": "title",
+              "value": "foo"
+            },
+            {
+              "enabled": true,
+              "name": "description",
+              "value": "bar"
+            },
+            {
+              "enabled": true,
+              "name": "",
+              "value": ""
+            }
+          ]
+        },
+        "bodyType": "multipart/form-data",
+        "description": "",
+        "headers": [
+          {
+            "enabled": true,
+            "name": "Content-Type",
+            "value": "multipart/form-data",
+            "id": "EhiMPeMX2g"
+          }
+        ],
+        "method": "DELETE",
+        "name": "threads delete",
+        "sortPriority": -1761062942546.998,
+        "url": "http://localhost:8081/threads/:id",
+        "urlParameters": [
+          {
+            "enabled": true,
+            "name": ":id",
+            "value": "403098b5-9de3-42c4-a301-daac7d905f97",
+            "id": "7Ug6MigqHY"
+          },
+          {
+            "enabled": true,
+            "name": "",
+            "value": "",
+            "id": "ynZUinNhRd"
+          }
+        ]
+      },
+      {
+        "model": "http_request",
+        "id": "rq_MQUyPuPKff",
+        "createdAt": "2025-10-21T16:15:09.719029",
+        "updatedAt": "2025-10-21T16:17:16.648478",
+        "workspaceId": "wk_CxJ3DPHSWw",
+        "folderId": null,
+        "authentication": {},
+        "authenticationType": null,
+        "body": {
+          "form": [
+            {
+              "enabled": true,
+              "name": "title",
+              "value": "foo"
+            },
+            {
+              "enabled": true,
+              "name": "description",
+              "value": "bar"
+            },
+            {
+              "enabled": true,
+              "name": "",
+              "value": ""
+            }
+          ]
+        },
+        "bodyType": "multipart/form-data",
+        "description": "",
+        "headers": [
+          {
+            "enabled": true,
+            "name": "Content-Type",
+            "value": "multipart/form-data",
+            "id": "EhiMPeMX2g"
+          }
+        ],
+        "method": "POST",
+        "name": "threads create",
+        "sortPriority": -1761062942546.999,
+        "url": "http://localhost:8081/threads",
+        "urlParameters": []
+      },
+      {
+        "model": "http_request",
+        "id": "rq_WxTAuXjbSK",
+        "createdAt": "2025-10-21T16:09:02.548570",
+        "updatedAt": "2025-10-21T16:09:18.165328",
+        "workspaceId": "wk_CxJ3DPHSWw",
+        "folderId": null,
+        "authentication": {},
+        "authenticationType": null,
+        "body": {},
+        "bodyType": null,
+        "description": "",
+        "headers": [],
+        "method": "GET",
+        "name": "threads list",
+        "sortPriority": -1761062942547.0,
+        "url": "http://localhost:8081/threads",
+        "urlParameters": []
+      }
+    ],
+    "grpcRequests": [],
+    "websocketRequests": []
+  }
+}
