@@ -8,10 +8,6 @@ import (
 	"github.com/pnlinh/goreddit"
 )
 
-func NewThreadStore(DB *sqlx.DB) *ThreadStore {
-	return &ThreadStore{DB: DB}
-}
-
 type ThreadStore struct {
 	*sqlx.DB
 }
